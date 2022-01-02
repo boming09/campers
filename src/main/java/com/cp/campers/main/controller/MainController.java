@@ -1,4 +1,4 @@
-package com.cp.campers.main;
+package com.cp.campers.main.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

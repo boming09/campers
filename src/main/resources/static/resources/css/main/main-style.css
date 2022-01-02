@@ -237,10 +237,6 @@ height: auto !important;
     flex-direction: column;
 }
 
-.slide-container{
-    position: relative;
-
-}
 
 .main-slider{
     width: 800px;

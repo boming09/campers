@@ -9,6 +9,14 @@ spring:
     url: jdbc:oracle:thin:@localhost:1521:xe
     username: campers
     password: campers
+  # css, js 수정 시 새로고침하면 반영되게 하는 설정
+  devtools: 
+    livereload:
+      enabled: true
+  freemarker:
+    cache: false
+  thymeleaf:
+    cache: false
 
 # mybatis config
 mybatis:
@@ -21,3 +29,7 @@ logging:
   level:
     root: info
 #logging level (package level - 지역설정)
+
+
+
+ 

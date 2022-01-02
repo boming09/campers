@@ -8,8 +8,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- 외부 css -->
-    <link href="resources/css/common/header-footer-style.css" rel="stylesheet">
-    <link href="resources/css/main/main-style.css" rel="stylesheet">
+    <link th:​​href="@{resources/css/main/main-style.css}" rel="stylesheet">
     <!-- 슬라이드 라이브러리 -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -78,39 +77,34 @@
             캠퍼스 추천! 꼭 가볼만한 캠핑장
           </div>
             <div class="main-slider">
-              <div class="prev" id="main-arrow"><img src="resources/images/main/prev.png"></div>
+              <div class="prev" id="main-arrow">
+              <img src="resources/images/main/prev.png">
+              </div>
               <div class="main-slide-wrapper">
                 <!-- 이미지는 추천할 캠핑장명(코드)으로 썸네일/상세페이지 링크 조회해오기 -->
-                <div class="slide-container">
-                <div class="main-slide" id="slide1"><a href="#">
-                  <img src="resources/images/main/list1.jpg"></a></div>
-                  <div class="slide-text" id="slide-text1">[지역명] 캠핑장이름블라블라</div>
-                </div>
-
-                <div class="slide-container">
-                  <div class="main-slide" id="slide2"><a href="#">
-                    <img src="resources/images/main/list2.jpg"></a></div>
-                    <div class="slide-text"  id="slide-text2">[지역명] 캠핑장이름블라블라</div>
+                <div class="main-slide">
+                <a href="#"><img src="resources/images/main/list1.jpg"></a>
                   </div>
-                  <div class="slide-container">
-                    <div class="main-slide" id="slide3"><a href="#">
-                      <img src="resources/images/main/list3.jpg"></a></div>
-                      <div class="slide-text"  id="slide-text3">[지역명] 캠핑장이름블라블라</div>
+
+                  <div class="main-slide">
+                  <a href="#"><img src="resources/images/main/list2.jpg"></a>
                     </div>
-                    <div class="slide-container">
-                      <div class="main-slide" id="slide4"><a href="#">
-                        <img src="resources/images/main/list4.jpg"></a></div>
-                        <div class="slide-text"  id="slide-text4">[지역명] 캠핑장이름블라블라</div>
+                    <div class="main-slide">
+                    <a href="#"><img src="resources/images/main/list3.jpg"></a>
                       </div>
-                      <div class="slide-container">
-                        <div class="main-slide" id="slide5"><a href="#">
-                          <img src="resources/images/main/list5.jpg"></a></div>
-                          <div class="slide-text"  id="slide-text5">[지역명] 캠핑장이름블라블라</div>
+                      <div class="main-slide">
+                      <a href="#"><img src="resources/images/main/list4.jpg"></a>
                         </div>
-              </div>
+                        
+                        <div class="main-slide">
+                        <a href="#"><img src="resources/images/main/list5.jpg"></a>
+                          </div>
+                    </div>    
+             
               <div class="next" id="main-arrow"><img src="resources/images/main/next.png"></div>
             </div>
         </div>
+        
 
         <div class="main-qna-txt">
          <span>
@@ -216,16 +210,13 @@
 
   
     <!-- 버튼 클릭으로 인원 수 추가 삭제 -->
-    <script src="resources/js/main/guestEvent.js"></script>
+    <script th:src="@{/resources/js/main/guestEvent.js}"></script>
 
     <!-- 추천리스트 슬라이드 -->
-    <script src="resources/js/main/slickSlide.js"></script>
-
-    <!-- 슬라이드 마우스 오버 효과 -->
-    <script src="resources/js/main/slideHover.js"></script>
+    <script th:src="resources/js/main/slickSlide.js"></script>
 
     <!-- 캘린더 스크립트 -->
-    <script src="resources/js/main/datePicker.js"></script>
+    <script th:src="resources/js/main/datePicker.js"></script>
       
 </body>
 </html>
