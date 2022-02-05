@@ -51,5 +51,5 @@
 - 정온화 : 백엔드서버 개발, 프론트엔드 개발(예약 및 결제 페이지)
 - 추현정 : 백엔드서버 개발, 프론트엔드 개발(로그인,회원가입, 자유게시판)
 
-- [프로토타입](https://www.figma.com/proto/Sw19KPtob2xiHe3FllNFni/fianl-project-campers?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=568%3A748)
-- [ERD](https://www.erdcloud.com/d/4evHAK6mBFYoRnMDE)
+### [프로토타입](https://www.figma.com/proto/Sw19KPtob2xiHe3FllNFni/fianl-project-campers?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=568%3A748)
+### [ERD](https://www.erdcloud.com/d/4evHAK6mBFYoRnMDE)
